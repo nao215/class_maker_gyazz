@@ -29,6 +29,10 @@ module ClassMakerGyazz
         tag = is_img?(text) ? "<h2>" : "<h2 class='page-header'>" 
         end_tag = "</h2>"
         return tag, end_tag
+      elsif current_depth == 1
+        tag = "<blockquote><p>"
+        end_tag = "</p></blockquote>"
+        return tag, end_tag
       end
     end
 

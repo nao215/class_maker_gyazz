@@ -14,8 +14,9 @@ describe ClassMakerGyazz do
     html = """
     <html>
       <head>
-        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
         <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+        <style type='text/css'><!-- li{list-style: none;} --></style>
       </head>
       <body>
         #{ClassMakerGyazz::Make.new(text).html}
